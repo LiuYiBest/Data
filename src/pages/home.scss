@@ -42,6 +42,7 @@
       box-shadow: 0 0 2px 0 #0e325f, inset 0 0 2px 0 #0e325f;
       background: #0f113a;
       &::before {
+        pointer-events: none;
         content: '';
         position: absolute;
         left: 0;
@@ -76,8 +77,20 @@
     }
     > .section5 {
       grid-area: box5;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      > .row1 {
+        height: px(317);
+      }
+      > .row2 {
+        height: px(317);
+      }
+      > .row3 {
+        height: px(455);
+      }
     }
-    .fuck,.破获排名,.发案趋势, .案发时段, .战果, .籍贯,.年龄段{
+    .fuck,.破获排名,.发案趋势, .案发时段, .战果, .籍贯,.年龄段,.案发类型, .案发街道,.作案手段 {
       height: px(363);
       display: flex;
       flex-direction: column;
@@ -91,6 +104,10 @@
         line-height: px(24);
         padding: px(10) px(28);
         text-shadow: 0 0 px(3) white;
+      }
+      .charts {
+        width: 100%;flex: 1;
+        display: flex;
       }
       .chart {
         flex: 1;
@@ -107,11 +124,13 @@
       margin-top: px(20);
       height: px(400);
     }
+    .chart12 {
+      flex: 1;display: flex; flex-direction: column;
+    }
     .年龄段 {display: flex;flex-direction: column;
       height: px(363);
       > .charts {
-        width: 100%;flex: 1;
-        display: flex; padding: px(30);
+        padding: px(30);
       }
       &-图1, &-图2, &-图3 {
         flex: 1;
@@ -119,7 +138,7 @@
       }
       &-图1, &-图2 {
         .legend {height: px(40); display: flex; align-items: center;
-          justify-content: center; flex-wrap: wrap;
+          justify-content: center; flex-wrap: wrap; padding-right: px(10);
           > span {display: inline-block; width: px(16); height: px(10);
             border-radius: px(2); margin: 0 px(10);}
           .male {background: #33a4fa;}
@@ -152,10 +171,11 @@
         display: flex; flex-direction: column;
         .chart {flex: 1;}
         .legend {
-          position: absolute;top: px(40);left: px(20);display: flex;
+          //position: absolute;top: px(40);left: px(20);display: flex;
+          position: absolute;top: px(40);
           align-items: center;
           font-size: px(22); padding: px(20) px(10) px(20) 0;
-          border-radius: 0;
+          border-radius: px(10);
           .icon {
             margin: 0 px(10);
             display: inline-block;
@@ -172,9 +192,11 @@
         }
       }
     }
-    .战果 {
+    .战果,.作案手段 {
+      padding: 0 px(24);
       > table {
-        margin-top: px(38);
+        width: 100%; table-layout: fixed;
+        margin-top: px(25);
         border-collapse: collapse;
         th, td {
           border: 1px solid #1a3671;
@@ -189,6 +211,16 @@
           td {height: px(50); width: px(84);
             background: #1c2456;
           }
+
+        }
+      }
+    }
+    .作案手段 {
+      > table {
+        tbody {
+          td {
+            height: px(26);
+          }
         }
       }
     }
@@ -197,16 +229,17 @@
       height: px(400);
       display: flex;
       padding-left: px(10);
+    }
       .chart {
         flex: 1;
         width: 100%;
       }
       .legend {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 100%;
-        padding: 0 px(20) px(10);
+        //display: flex;
+        //align-items: center;
+        //justify-content: flex-end;
+        //width: 100%;
+        //padding: 0 px(20) px(10);
         > .first, > .second {
           display: inline-block;
           width: px(18);
@@ -223,7 +256,7 @@
       }
     }
   }
-}
+
 
 
 
