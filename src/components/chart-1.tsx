@@ -6,17 +6,19 @@ import {createEchartsOptions} from '../shared/create-echarts-options';
 
 export const Chart1 = () =>{
     const divRef =useRef(null);
-    //挂载之后
     useEffect(()=>{
         let myChart = echarts.init(divRef.current);
         myChart.setOption(createEchartsOptions({
             ...baseEchartOption,
+            color: '#1076fa',
             xAxis: {
-                data: ['福州', '厦门', '莆田', '漳州', '龙岩', '泉州','三明','南平'],
+
+                data: ['广州', '湖南', '福建', '云南', '山东', '四川','浙江'],
                 axisTick:{show:false},
                 nameTextStyle:{
                     fontStyle:'italic'
                 },
+
                 axisLabel:{
                     fontSize: px(12),
                     formatter(val){
@@ -46,7 +48,7 @@ export const Chart1 = () =>{
             series: [{
                 name: '销量',
                 type: 'bar',
-                data: [5, 20, 36, 10, 10, 20,12,17]
+                data: [45, 20, 26, 34, 17, 30,12,17]
             }]
         }));
     },[])

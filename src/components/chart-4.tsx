@@ -3,10 +3,23 @@ import * as echarts from 'echarts';
 import {createEchartsOptions} from '../shared/create-echarts-options';
 import {px} from '../shared/px';
 
+
+export const Chart2 = () => {
+    const divRef = useRef(null);
+    const myChart = useRef(null);
+    const data = [
+        0.15, 0.13, 0.11,
+        0.13, 0.14, 0.15,
+        0.16, 0.18, 0.21,
+        0.19, 0.17, 0.16,
+        0.15
+    ];
+}
+
 export const Chart4 = () => {
     const divRef = useRef(null);
     useEffect(() => {
-        var myChart = echarts.init(divRef.current);
+        let myChart = echarts.init(divRef.current);
         myChart.setOption(createEchartsOptions({
             xAxis: {
                 type: 'category',

@@ -51,19 +51,19 @@ export const Chart6 = () => {
 
     return (
         <div className="bordered 籍贯">
-            <h2>全市犯罪人员籍贯分布地</h2>
+            <h2>全国犯罪人员籍贯分布地</h2>
             <div className="wrapper">
                 <div ref={divRef} className="chart"/>
                 {/*legend*/}
                 <div className="ring">
                     <div className="radar" />
                 </div>
-                <div className="legend bordered">
-                    <span className="icon" style={{}}/>福建省
+                {/*<div className="legend bordered">*/}
+                    {/*<span className="icon" style={{}}/>福建省*/}
                     {/*<span className="icon" style={{background: colors['四川省']}}/>四川籍*/}
                     {/*<span className="icon" style={{background: colors['青海省']}}/>青海籍*/}
 
-                </div>
+                {/*</div>*/}
 
                 <div className="notes">
                     <p>数据实时监控中</p>

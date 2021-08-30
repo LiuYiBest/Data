@@ -4,7 +4,8 @@
   flex: 1;height: 100%;
   display: flex;
   flex-direction: column;
-  background: #00061b;
+  //background: #00061b;
+  background: linear-gradient(189deg, rgba(2,0,36,1) 0%, rgba(11,43,75,1) 100%, rgba(0,212,255,1) 100%);
   color: white;
   font-size:px(18);
   > header{
@@ -28,7 +29,7 @@
     flex: 1;
     display: grid;
     grid-template:
-      "box1 box2 box4 box5" 755fr
+      "box1 box2 box4 box5" 765fr
       "box3 box3 box4 box5" 363fr / 366fr 361fr 811fr 747fr;
     grid-column-gap: px(28);
     grid-row-gap: px(28);
@@ -120,9 +121,6 @@
         width: 100%;
       }
     }
-    //.发案趋势 {
-    //  height: px(363);
-    //}
     .发案趋势,  {
        height: px(363);
      }
