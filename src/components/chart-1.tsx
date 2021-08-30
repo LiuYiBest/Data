@@ -1,15 +1,16 @@
 import React, {useEffect, useRef} from 'react';
 import * as echarts from 'echarts';
-const px = (n)=>n/2420*(window as any).pageWidth;
+import {px} from '../shared/px';
+import {baseEchartOption} from '../shared/base-echart-option';
+import {createEchartsOptions} from '../shared/create-echarts-options';
 
 export const Chart1 = () =>{
     const divRef =useRef(null);
     //挂载之后
     useEffect(()=>{
         let myChart = echarts.init(divRef.current);
-        myChart.setOption({
-            title:{show:false},
-            legend:{show:false},
+        myChart.setOption(createEchartsOptions({
+            ...baseEchartOption,
             xAxis: {
                 data: ['福州', '厦门', '莆田', '漳州', '龙岩', '泉州','三明','南平'],
                 axisTick:{show:false},
@@ -26,15 +27,12 @@ export const Chart1 = () =>{
                     }
                 },
             },
-
-            grid:{
-                x: px(40),
-                y:px(40),
-                x2:px(40),
-                y2:px(40)
-            },
             yAxis: {
                 splitLine:{show:false},
+                axisLine:{
+                    show:true,
+                    lineStyle:{color:'#083B70'}
+                },
                 axisLabel:{
                     fontSize: px(12)
                 }
@@ -44,7 +42,7 @@ export const Chart1 = () =>{
                 type: 'bar',
                 data: [5, 20, 36, 10, 10, 20,12,17]
             }]
-        });
+        }));
     },[])
     return (
         <div className="border fuck">
