@@ -64,9 +64,9 @@ export const Home = () => {
                     </div>
                 </section>
             </main>
-            <footer>
-                {/*&copy;  公安局数据-{year}*/}
-            </footer>
+            {/*<footer>*/}
+            {/*    /!*&copy;  公安局数据-{year}*!/*/}
+            {/*</footer>*/}
         </div>
     );
 };

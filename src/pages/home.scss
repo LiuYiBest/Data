@@ -12,7 +12,7 @@
     background-size: cover;
     margin-top: px(20);
   }
-  > footer{
+  > r{
     height: px(68);
     border: 1px solid #0d2d59;
     margin: px(20) 0 1px;
@@ -191,11 +191,73 @@
             border-radius: 50%;
             background: #1cecd9;
           }
+        }> .ring {
+           margin: 0px 50px 50px 50px;
+           border: 1px solid #1c3cfa;  //外圈
+           bottom: 6%;
+           left: 4%;width: px(98);height: px(98);
+           border-bottom: none;
+           border-radius: 50%;
+           overflow: hidden;
+           animation: spin infinite 5s linear;
+           > .radar {
+             border: 2px solid #172760; //中圈
+             position: absolute;
+             width: px(62);
+             height: px(62);
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             border-radius: 50%;
+             &::before {
+               content: '';
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               width: px(34);
+               height: px(34);
+               border: 2px solid #162358; //内圈
+               border-radius: 50%;
+             }
+             &::after {
+               content: '';
+               position: absolute;
+               //top: 0;
+               top: 25%;
+               left: 50%;
+               transform: translateX(-50%);
+               //width: px(4);
+               //height: px(12);
+               width: px(4);
+               height: px(12);
+               z-index: 1;
+               background: #007cc0;
+               border-radius: 50%;
+               box-shadow: 0 0 5px 1px #0094e4,
+               -3px -10px 5px 1px #0094e4,
+               -7px -15px 10px 1px #0094e4,
+               -3px -3px 10px 1px #0094e4,
+               -7px -7px 20px 1px #0094e4,
+               -11px -11px 30px 1px #0094e4,
+               -11px -11px 40px 1px #0094e4,
+               -11px -11px 30px 1px #0094e4,
+               -11px -11px 30px 1px #0094e4;
+             }
+           }
+         }
+        @keyframes spin {
+          from {
+            transform: rotate(0);
+          }
+          to {
+            transform: rotate(360deg);
+          }
         }
         .notes{
           position: absolute;
-          bottom: px(10);
-          right: px(10);
+          bottom: px(20);
+          left: px(60);
         }
       }
     }

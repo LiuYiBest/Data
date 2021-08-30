@@ -30,7 +30,7 @@ export const Chart6 = () => {
                         borderColor: '#01A7F7',
                         emphasis: {
                             label: {color: 'white'},
-                            areaColor: '#5470C6',
+                            areaColor: '',
                         },
                     }
                 },
@@ -44,39 +44,6 @@ export const Chart6 = () => {
                         // borderColor: '#01A7F7',
                     }
                 },
-                // {
-                //     type: 'map',
-                //     mapType: 'CN', // 自定义扩展图表类型
-                //     data: [
-                //         {name: '四川省', value: 100},
-                //     ],
-                //     itemStyle: {
-                //         // areaColor: '#010D3D',
-                //         // color: colors['四川省'],
-                //         borderColor: 'yellow',
-                //         // emphasis: {
-                //         //     label: {color: 'white'},
-                //         //     areaColor: '#5470C6',
-                //         // },
-                //     }
-                // },
-                // {
-                //     type: 'map',
-                //     mapType: 'CN', // 自定义扩展图表类型
-                //     data: [
-                //         {name: '青海省', value: 100},
-                //     ],
-                //     itemStyle: {
-                //         // areaColor: '#010D3D',
-                //         // color: colors['青海省'],
-                //         borderColor: '#01A7F7',
-                //         // emphasis: {
-                //         //     label: {color: 'white'},
-                //         //     areaColor: '#5470C6',
-                //         // },
-                //     }
-                // },
-
 
             ]
         }));
@@ -88,12 +55,19 @@ export const Chart6 = () => {
             <div className="wrapper">
                 <div ref={divRef} className="chart"/>
                 {/*legend*/}
+                <div className="ring">
+                    <div className="radar" />
+                </div>
                 <div className="legend bordered">
                     <span className="icon" style={{}}/>福建省
                     {/*<span className="icon" style={{background: colors['四川省']}}/>四川籍*/}
                     {/*<span className="icon" style={{background: colors['青海省']}}/>青海籍*/}
+
                 </div>
-                {/*<div className="notes">此地图仅显示了中国的部分区域</div>*/}
+
+                <div className="notes">
+                    <p>数据实时监控中</p>
+                </div>
             </div>
         </div>
     );

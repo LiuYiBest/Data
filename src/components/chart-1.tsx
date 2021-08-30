@@ -34,7 +34,7 @@ export const Chart1 = () =>{
                 splitLine:{show:false},
                 axisLine:{
                     show:true,
-                    lineStyle:{color:'#6e7079'}
+                    lineStyle:{color:'#707992'}
                 },
                 nameTextStyle:{
                     fontStyle:'italic'
@@ -57,6 +57,4 @@ export const Chart1 = () =>{
         </div>
     </div>
     )
-
-
 }
