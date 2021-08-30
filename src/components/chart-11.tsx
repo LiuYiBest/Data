@@ -33,7 +33,7 @@ export const Chart11 = () => {
                         shadowColor: 'rgba(0, 0, 0, 0.5)'
                     },
                     data: [
-                        {value: 0.36, name: '刑事案件'},
+                        {value: 0.36, name: '行政案件'},
                         {value: 0.20, name: '民事案件'},
                         {value: 0.18, name: '经济案件'},
                         {value: 0.24, name: '其他案件'},
@@ -44,7 +44,7 @@ export const Chart11 = () => {
     }, []);
 
     return (
-        <div className="年龄段-图1">
+        <div className="chart7-p1">
             <div className="chart">
                 <div className="main" ref={divRef}/>
             </div>

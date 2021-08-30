@@ -7,15 +7,13 @@ export const Chart12 = () => {
     const divRef = useRef(null);
     // const colors = ['#F46064', '#F38E1C', '#1CDB7C', '#8D70F8', '#33A4FA'];
     const data = [
-        {value: 0.08, name: '东岗路'},
-        {value: 0.06, name: '段家滩'},
-        {value: 0.11, name: '雁北'},
+        {value: 0.08, name: '民生路'},
+        {value: 0.16, name: '段家滩'},
+        {value: 0.21, name: '东大街'},
         {value: 0.09, name: '五泉山'},
         {value: 0.12, name: '中山路'},
-        {value: 0.06, name: '庆阳路'},
-        {value: 0.08, name: '武都路'},
-        {value: 0.08, name: '酒泉路'},
-        {value: 0.08, name: '天水路'},
+        {value: 0.15, name: '庆阳路'},
+        {value: 0.19, name: '鼓楼街道'},
     ];
     useEffect(() => {
         var myChart = echarts.init(divRef.current);
@@ -56,7 +54,7 @@ export const Chart12 = () => {
     }, []);
 
     return (
-        <div className="年龄段-图1">
+        <div className="chart7-p1">
             <div className="chart">
                 <div className="main" ref={divRef}/>
             </div>

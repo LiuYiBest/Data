@@ -32,10 +32,10 @@ export const Chart8 = () => {
                     },
                     data: [
                         {value: 0.07, name: '10-20'},
-                        {value: 0.10, name: '20-30'},
+                        {value: 0.16, name: '20-30'},
                         {value: 0.23, name: '30-40'},
                         {value: 0.28, name: '40-50'},
-                        {value: 0.32, name: '50-60'},
+                        {value: 0.26, name: '50-60'},
                     ]
                 }
             ]
@@ -43,7 +43,7 @@ export const Chart8 = () => {
     }, []);
 
     return (
-        <div className="年龄段-图2">
+        <div className="chart7-p2">
             <div className="chart">
                 <div className="main" ref={divRef}/>
                 <div className="text">年龄段</div>

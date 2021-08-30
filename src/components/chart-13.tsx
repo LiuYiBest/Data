@@ -5,15 +5,14 @@ import {createEchartsOptions} from '../shared/create-echarts-options';
 export const Chart13 = () => {
     const divRef = useRef(null);
     const data = [
-        {value: 0.08, name: '东岗路'},
-        {value: 0.06, name: '段家滩'},
-        {value: 0.11, name: '雁北'},
+        {value: 0.08, name: '民生路'},
+        {value: 0.16, name: '段家滩'},
+        {value: 0.21, name: '东大街'},
         {value: 0.09, name: '五泉山'},
         {value: 0.12, name: '中山路'},
-        {value: 0.06, name: '庆阳路'},
-        {value: 0.08, name: '武都路'},
-        {value: 0.08, name: '酒泉路'},
-        {value: 0.08, name: '天水路'},
+        {value: 0.15, name: '庆阳路'},
+        {value: 0.19, name: '鼓楼街道'},
+
     ];
     useEffect(() => {
         var myChart = echarts.init(divRef.current);
@@ -55,7 +54,8 @@ export const Chart13 = () => {
                 color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                     offset: 0,
                     color: '#0A97FB'
-                }, {
+                },
+                    {
                     offset: 1,
                     color: '#1E34FA'
                 }]),

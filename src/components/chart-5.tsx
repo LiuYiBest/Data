@@ -2,24 +2,24 @@ import React from 'react';
 
 export const Chart5 = () => {
     return (
-        <div className="战果">
-            <h2>往年战果数对比</h2>
+        <div className="chart5">
+            <h2>往年行政犯罪案例</h2>
             <table>
                 <thead>
                 <tr>
-                    <th>年份</th><th>破案数</th><th>抓获嫌疑人</th><th>并串案件</th><th>现勘录入</th>
-                    <th>视侦录入</th><th>合成案件数</th><th>合计</th>
+                    <th>年份</th><th>破案数</th><th>抓获犯人</th><th>行政拘留</th><th>现勘录入</th>
+                    <th>视侦录入</th><th>合计</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>2015</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                    <td>2019</td><td>59</td><td>45</td><td>24</td><td>35</td><td>57</td><td>220</td>
                 </tr>
                 <tr>
-                    <td>2016</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                    <td>2020</td><td>52</td><td>47</td><td>20</td><td>33</td><td>47</td><td>199</td>
                 </tr>
                 <tr>
-                    <td>2017</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                    <td>2021</td><td>41</td><td>32</td><td>24</td><td>35</td><td>37</td><td>169</td>
                 </tr>
                 </tbody>
             </table>

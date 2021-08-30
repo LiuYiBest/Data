@@ -46,14 +46,23 @@ export const Chart1 = () =>{
                 }
             },
             series: [{
+
                 name: '销量',
                 type: 'bar',
-                data: [45, 20, 26, 34, 17, 30,12,17]
+                data: [45, 20, 26, 34, 17, 30,12,17],
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                    offset: 0,
+                    color: '#0A97FB'
+                },
+                    {
+                        offset: 1,
+                        color: '#1E34FA'
+                    }]),
             }]
         }));
     },[])
     return (
-        <div className="bordered fuck">
+        <div className="bordered chart1">
         <h2>派出所管辖统计</h2>
         <div ref={divRef} className="chart">
         </div>

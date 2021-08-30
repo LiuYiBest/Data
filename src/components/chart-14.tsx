@@ -4,7 +4,7 @@ export const Chart14 = () => {
     return (
 
 
-        <div className="作案手段">
+        <div className="chart10">
             <h2>作案手段分析</h2>
         <table>
             <thead>
@@ -16,26 +16,26 @@ export const Chart14 = () => {
             </thead>
             <tbody>
             <tr>
-                <td rowSpan={4}>入室盗窃</td>
-                <td>翻窗入室</td>
+                <td rowSpan={4}>合同</td>
+                <td>伪造合同</td>
                 <td>10</td>
                 <td rowSpan={4}>80</td>
             </tr>
             <tr>
-                <td>撬门入室</td>
+                <td>合同诈骗</td>
                 <td>20</td>
             </tr>
             <tr>
-                <td>技术开锁</td>
+                <td>金融借款</td>
                 <td>20</td>
             </tr>
             <tr>
-                <td>撬防护栏</td>
+                <td>责任纠纷</td>
                 <td>30</td>
             </tr>
             <tr>
                 <td rowSpan={2}>抢夺</td>
-                <td>摩托车飞车抢夺</td>
+                <td>飞车抢夺</td>
                 <td>22</td>
                 <td rowSpan={2}>44</td>
             </tr>
@@ -44,27 +44,27 @@ export const Chart14 = () => {
                 <td>22</td>
             </tr>
             <tr>
-                <td rowSpan={3}>扒窃</td>
-                <td>公交车扒窃</td>
+                <td rowSpan={3}>交通</td>
+                <td>醉驾</td>
                 <td>40</td>
                 <td rowSpan={3}>68</td>
             </tr>
             <tr>
-                <td>车站扒窃</td>
+                <td>行驶超速</td>
                 <td>22</td>
             </tr>
             <tr>
-                <td>街面扒窃</td>
+                <td>肇事逃逸</td>
                 <td>45</td>
             </tr>
             <tr>
                 <td rowSpan={2}>诈骗</td>
-                <td>甩票子诈骗</td>
+                <td>贷款诈骗</td>
                 <td>32</td>
                 <td rowSpan={2}>102</td>
             </tr>
             <tr>
-                <td>买手机诈骗</td>
+                <td>电信诈骗</td>
                 <td>80</td>
             </tr>
             </tbody>

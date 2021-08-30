@@ -29,8 +29,8 @@ export const Chart9 = () => {
             series: [{
                 type: 'line',
                 data: [
-                    0.19, 0.20, 0.26,
-                    0.35, 0.26, 0.20,
+                    0.07, 0.16, 0.23,
+                    0.23, 0.19, 0.14,
                     0.08, 0.06
                 ],
                 symbol: 'circle',
@@ -50,7 +50,7 @@ export const Chart9 = () => {
     }, []);
 
     return (
-        <div className="年龄段-图3">
+        <div className="chart7-p3">
             <h3>犯罪年龄趋势图</h3>
             <div ref={divRef} className="chart">
             </div>
