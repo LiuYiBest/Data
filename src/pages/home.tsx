@@ -13,12 +13,12 @@ export const Home = () => {
                     <Chart1 />
                     <Chart2 />
                 </section>
-                <section className="border section2">
+                <section className="bordered section2">
 
                 </section>
-                <section className="border section3"></section>
-                <section className="border section4"></section>
-                <section className="border section5"></section>
+                <section className="bordered section3"></section>
+                <section className="bordered section4"></section>
+                <section className="bordered section5"></section>
             </main>
         </div>
     );

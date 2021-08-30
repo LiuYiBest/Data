@@ -14,6 +14,9 @@ export const Chart1 = () =>{
             xAxis: {
                 data: ['福州', '厦门', '莆田', '漳州', '龙岩', '泉州','三明','南平'],
                 axisTick:{show:false},
+                nameTextStyle:{
+                    fontStyle:'italic'
+                },
                 axisLabel:{
                     fontSize: px(12),
                     formatter(val){
@@ -31,7 +34,10 @@ export const Chart1 = () =>{
                 splitLine:{show:false},
                 axisLine:{
                     show:true,
-                    lineStyle:{color:'#083B70'}
+                    lineStyle:{color:'#6e7079'}
+                },
+                nameTextStyle:{
+                    fontStyle:'italic'
                 },
                 axisLabel:{
                     fontSize: px(12)
@@ -45,7 +51,7 @@ export const Chart1 = () =>{
         }));
     },[])
     return (
-        <div className="border fuck">
+        <div className="bordered fuck">
         <h2>派出所管辖统计</h2>
         <div ref={divRef} className="chart">
         </div>
