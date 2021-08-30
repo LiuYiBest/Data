@@ -35,7 +35,7 @@ export const Home = () => {
                 </section>
                 <section className="section4">
                     <Chart6/>
-                    <div className="bordered 年龄段">
+                    <div className="bordered chart7">
                         <h2>犯罪人员年龄段分布</h2>
                         <div className="charts">
                             <Chart7/>
@@ -45,21 +45,21 @@ export const Home = () => {
                     </div>
                 </section>
                 <section className="section5">
-                    <div className="bordered row1 案发类型">
+                    <div className="bordered row1 chart8">
                         <h2>案发类型统计</h2>
                         <div className="charts">
                             <Chart10/>
                             <Chart11/>
                         </div>
                     </div>
-                    <div className="bordered row2 案发街道">
+                    <div className="bordered row2 chart9">
                         <h2>案发街道统计</h2>
                         <div className="charts">
                             <Chart12/>
                             <Chart13/>
                         </div>
                     </div>
-                    <div className="bordered row3 作案手段">
+                    <div className="bordered row3 chart10">
                         <Chart14/>
                     </div>
                 </section>

@@ -70,7 +70,7 @@ export const Chart3 = () => {
     }, []);
 
     return (
-        <div className="bordered 发案趋势">
+        <div className="bordered chart3">
             <h2>犯罪趋势分析</h2>
             <div ref={divRef} className="chart"/>
         </div>
