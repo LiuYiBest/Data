@@ -77,8 +77,8 @@
     > .section5 {
       grid-area: box5;
     }
-    .fuck,.破获排名{
-      height: px(315);
+    .fuck,.破获排名,.发案趋势, .案发时段{
+      height: px(363);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -97,8 +97,19 @@
         width: 100%;
       }
     }
+    //.发案趋势 {
+    //  height: px(363);
+    //}
+    .发案趋势,  {
+       height: px(363);
+     }
+    .案发时段 {
+      margin-top: px(20);
+      height: px(400);
+    }
     .破获排名 {
-      height: px(423);
+      margin-top: px(20);
+      height: px(400);
       //display: flex;
       //flex-direction: column;
       //align-items: center;
