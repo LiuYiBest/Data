@@ -7,31 +7,31 @@ export const Chart2 = () => {
     const divRef = useRef(null);
     const myChart = useRef(null);
     const data = [
-        {name: '成都', 2020: 2, 2021: 3},
-        {name: '北京', 2020: 2, 2021: 3},
-        {name: '厦门', 2020: 2, 2021: 3},
-        {name: '中山', 2020: 2, 2021: 3},
-        {name: '深圳', 2020: 2, 2021: 3},
-        {name: '泉州', 2020: 2, 2021: 3},
-        {name: '南京', 2020: 2, 2021: 3},
-        {name: '惠州', 2020: 2, 2021: 3},
-        {name: '上海', 2020: 2, 2021: 3},
+        {name: '梅州', 2020: 5, 2021: 3},
+        {name: '漳州', 2020: 3, 2021: 5},
+        {name: '厦门', 2020: 1, 2021: 6},
+        {name: '三明', 2020: 7, 2021: 4},
+        {name: '杭州', 2020: 5, 2021: 6},
+        {name: '汕头', 2020: 3, 2021: 7},
+        {name: '丽水', 2020: 1, 2021: 2},
+        {name: '惠州', 2020: 3, 2021: 4},
+        {name: '乐清', 2020: 1, 2021: 5},
     ];
     useEffect(() => {
         setInterval(() => {
             const newData = [
-                {name: '成都', 2020: 2, 2021: Math.random() * 10},
-                {name: '北京', 2020: 2, 2021: 3},
-                {name: '厦门', 2020: Math.random() * 10, 2012: 3},
-                {name: '中山', 2020: 2, 2021: Math.random() * 10},
-                {name: '深圳', 2020: Math.random() * 10, 2012: 3},
-                {name: '福州', 2020: 2, 2021: Math.random() * 10},
-                {name: '南京', 2020: Math.random() * 10, 2012: 3},
-                {name: '惠州', 2020: 2, 2021: 3},
-                {name: '上海', 2020: 2, 2021: 3},
+                {name: '梅州', 2020: 1, 2021: Math.random() * 10},
+                {name: '漳州', 2020: Math.random() * 3, 2021: 4},
+                {name: '厦门', 2020: Math.random() * 10, 2021: 3},
+                {name: '三明', 2020: 4, 2021: Math.random() * 10},
+                {name: '杭州', 2020: Math.random() * 10, 2021: 3},
+                {name: '汕头', 2020: 5, 2021: Math.random() * 10},
+                {name: '丽水', 2020: Math.random() * 10, 2021: 3},
+                {name: '惠州', 2020: 6, 2021: 2},
+                {name: '乐清', 2020: 3, 2021:  Math.random() * 8},
             ];
             initRender(newData);
-        }, 1000);
+        }, 2000);
     }, []);
     const initRender = (data) => {
         myChart.current.setOption(createEchartsOptions({
@@ -50,7 +50,7 @@ export const Chart2 = () => {
             },
             series: [
                 {
-                    name: '2011年',
+                    name: '2020年',
                     type: 'bar',
                     data: data.map(i => i[2020]),
                     itemStyle: {
@@ -67,7 +67,7 @@ export const Chart2 = () => {
                     }
                 },
                 {
-                    name: '2012年',
+                    name: '2021年',
                     type: 'bar',
                     data: data.map(i => i[2021]),
                     itemStyle: {
