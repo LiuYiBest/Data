@@ -7,33 +7,33 @@ export const Chart2 = () => {
     const divRef = useRef(null);
     const myChart = useRef(null);
     const data = [
-        {name: '成都', 2011: 2, 2012: 3},
-        {name: '北京', 2011: 2, 2012: 3},
-        {name: '厦门', 2011: 2, 2012: 3},
-        {name: '中山', 2011: 2, 2012: 3},
-        {name: '深圳', 2011: 2, 2012: 3},
-        {name: '泉州', 2011: 2, 2012: 3},
-        {name: '南京', 2011: 2, 2012: 3},
-        {name: '惠州', 2011: 2, 2012: 3},
-        {name: '上海', 2011: 2, 2012: 3},
+        {name: '成都', 2020: 2, 2021: 3},
+        {name: '北京', 2020: 2, 2021: 3},
+        {name: '厦门', 2020: 2, 2021: 3},
+        {name: '中山', 2020: 2, 2021: 3},
+        {name: '深圳', 2020: 2, 2021: 3},
+        {name: '泉州', 2020: 2, 2021: 3},
+        {name: '南京', 2020: 2, 2021: 3},
+        {name: '惠州', 2020: 2, 2021: 3},
+        {name: '上海', 2020: 2, 2021: 3},
     ];
     useEffect(() => {
         setInterval(() => {
             const newData = [
-                {name: '成都', 2011: 2, 2012: Math.random() * 10},
-                {name: '北京', 2011: 2, 2012: 3},
-                {name: '厦门', 2011: Math.random() * 10, 2012: 3},
-                {name: '中山', 2011: 2, 2012: Math.random() * 10},
-                {name: '深圳', 2011: Math.random() * 10, 2012: 3},
-                {name: '福州', 2011: 2, 2012: Math.random() * 10},
-                {name: '南京', 2011: Math.random() * 10, 2012: 3},
-                {name: '惠州', 2011: 2, 2012: 3},
-                {name: '上海', 2011: 2, 2012: 3},
+                {name: '成都', 2020: 2, 2021: Math.random() * 10},
+                {name: '北京', 2020: 2, 2021: 3},
+                {name: '厦门', 2020: Math.random() * 10, 2012: 3},
+                {name: '中山', 2020: 2, 2021: Math.random() * 10},
+                {name: '深圳', 2020: Math.random() * 10, 2012: 3},
+                {name: '福州', 2020: 2, 2021: Math.random() * 10},
+                {name: '南京', 2020: Math.random() * 10, 2012: 3},
+                {name: '惠州', 2020: 2, 2021: 3},
+                {name: '上海', 2020: 2, 2021: 3},
             ];
-            x(newData);
+            initRender(newData);
         }, 1000);
     }, []);
-    const x = (data) => {
+    const initRender = (data) => {
         myChart.current.setOption(createEchartsOptions({
             xAxis: {
                 type: 'value',
@@ -52,9 +52,10 @@ export const Chart2 = () => {
                 {
                     name: '2011年',
                     type: 'bar',
-                    data: data.map(i => i[2011]),
+                    data: data.map(i => i[2020]),
                     itemStyle: {
                         normal: {
+                            barBorderRadius: 20,
                             color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
                                 offset: 0,
                                 color: '#2034F9'
@@ -68,9 +69,10 @@ export const Chart2 = () => {
                 {
                     name: '2012年',
                     type: 'bar',
-                    data: data.map(i => i[2012]),
+                    data: data.map(i => i[2021]),
                     itemStyle: {
                         normal: {
+                            barBorderRadius: 20,
                             color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
                                 offset: 0,
                                 color: '#B92AE8'
@@ -87,7 +89,7 @@ export const Chart2 = () => {
     };
     useEffect(() => {
         myChart.current = echarts.init(divRef.current);
-        x(data);
+        initRender(data);
     }, []);
 
     return (

@@ -1,10 +1,10 @@
 @import "../shared/helper";
 
 .home {
-  flex: 1;height: 100%;
+  flex: 1;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  //background: #00061b;
   background: linear-gradient(189deg, rgba(2,0,36,1) 0%, rgba(11,43,75,1) 100%, rgba(0,212,255,1) 100%);
   color: white;
   font-size:px(18);
@@ -111,12 +111,13 @@
         width: 100%;
       }
     }
-    .chart3,  {
-       height: px(363);
-     }
+
     .chart4 {
       margin-top: px(20);
       height: px(400);
+    }
+    .chart6 {
+
     }
     .chart12 {
       flex: 1;display: flex; flex-direction: column;
@@ -165,8 +166,7 @@
         display: flex; flex-direction: column;
         .chart {flex: 1;}
         .legend {
-          //position: absolute;top: px(40);left: px(20);display: flex;
-          position: absolute;top: px(40);
+          position: absolute;top: px(30);
           align-items: center;
           font-size: px(22); padding: px(20) px(10) px(20) 0;
           border-radius: px(10);
@@ -211,12 +211,9 @@
              &::after {
                content: '';
                position: absolute;
-               //top: 0;
                top: 25%;
                left: 50%;
                transform: translateX(-50%);
-               //width: px(4);
-               //height: px(12);
                width: px(4);
                height: px(12);
                z-index: 1;
@@ -292,7 +289,6 @@
         width: 100%;
       }
       .legend {
-
         > .first, > .second {
           display: inline-block;
           width: px(18);

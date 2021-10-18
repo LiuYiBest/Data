@@ -14,7 +14,6 @@ export const Chart7 = () => {
             legend: {show: false},
             series: [
                 {
-                    name: '访问来源',
                     type: 'pie',
                     radius: ['75%', '90%'],
                     avoidLabelOverlap: false,
