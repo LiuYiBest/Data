@@ -3,6 +3,7 @@ import * as echarts from 'echarts';
 import {createEchartsOptions} from '../shared/create-echarts-options';
 import {px} from '../shared/px';
 
+
 export const Chart11 = () => {
     const divRef = useRef(null);
     const colors = ['#F46064', '#F38E1C', '#1CDB7C', '#8D70F8', '#33A4FA'];
