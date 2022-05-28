@@ -26,6 +26,7 @@
     > section{
       text-align: center;
     }
+    //圆角的发光效果 加上box-shadow，向内扩展1像素，向内位移 阴影是无限加的
     .bordered  {
       border: 1px solid #0764bc;
       border-radius: 4px;

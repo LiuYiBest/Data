@@ -1,3 +1,4 @@
+//使用Scss的函数去重新定义rem函数
 @function px($n){
   @return $n/2420*100rem;
 }
