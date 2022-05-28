@@ -16,6 +16,7 @@ import {Chart12} from '../components/chart-12';
 import {Chart13} from '../components/chart-13';
 import {Chart14} from '../components/chart-14';
 
+// 大屏首页
 export const Home = () => {
     const year = new Date().getFullYear();
     return (

@@ -52,6 +52,7 @@
         0 -9px 0 -8px #0d305d,;
       }
     }
+    //图表样式
     > .section1 {
       grid-area: box1;
       display: flex;
@@ -88,6 +89,7 @@
         height: px(455);
       }
     }
+    //图表公用样式
     .chart1,.chart2,.chart3, .chart4, .chart5, .chart6,.chart7,.chart8, .chart9,.chart10 {
       height: px(363);
       display: flex;
